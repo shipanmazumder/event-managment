@@ -30,7 +30,7 @@ A comprehensive web-based event management system built with PHP that allows org
    - PHP 7.0 or higher
    - MySQL 5.6 or higher
    - Apache Web Server
-   - XAMPP/WAMP/MAMP (for local development)
+   - XAMPP (for local development)
 
 2. **Local Development Setup**
 
@@ -57,22 +57,24 @@ A comprehensive web-based event management system built with PHP that allows org
    b. Database setup:
    - Create a new MySQL database through hosting control panel
    - Import the database schema
+   - Need mysqli enabled
    - Update database credentials in `config/config.php`
 
    c. Configure domain/subdomain:
    - Point your domain/subdomain to the installation directory
-   - Ensure .htaccess is properly configured
 
-3. **Directory Structure**
+4. **Directory Structure**
    ```
    events/
-   ├── class/           # PHP classes
-   ├── config/          # Configuration files
+   ├── class/          # PHP classes
+   ├── config/         # Configuration files
    ├── css/            # Stylesheets
    ├── helpers/        # Helper functions
    ├── inc/            # Include files
    ├── js/             # JavaScript files
    └── lib/            # Core libraries
+   └── screenshot/     # Screenshots
+   └── sql/            # SQL
    ```
 
 ## Test Credentials
@@ -81,8 +83,8 @@ For testing purposes, you can use the following login credentials:
 
 1. Admin User
    ```
-   Email: admin@example.com
-   Password: admin123
+   Email: admin@admin.com
+   Password: Admin@1234
    ```
 
 ## Usage
@@ -107,8 +109,6 @@ For testing purposes, you can use the following login credentials:
 
 - Implements session-based authentication
 - SQL injection prevention
-- XSS protection
-- CSRF protection
 
 ## Contributing
 
