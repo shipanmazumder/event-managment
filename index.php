@@ -71,10 +71,10 @@ try {
                             <?php if (!empty($events['data'])): ?>
                                 <?php foreach ($events['data'] as $event): ?>
                                     <tr>
-                                        <td ><?php echo htmlspecialchars($event['name']); ?></td>
+                                        <td ><?php echo $event['name']; ?></td>
                                         <td ><?php echo date('d M Y', strtotime($event['event_date'])); ?></td>
                                         <td ><?php echo date('h:i A', strtotime($event['event_time'])); ?></td>
-                                        <td ><?php echo htmlspecialchars($event['location']); ?></td>
+                                        <td ><?php echo $event['location']; ?></td>
                                         <td ><?php echo htmlspecialchars($fm->textshorten($event['description'],30)); ?></td>
                                         <td ><?php echo htmlspecialchars($event['maximum_participant']); ?></td>
                                         <td><?php echo htmlspecialchars($event['total_participate']); ?></td>
@@ -188,7 +188,7 @@ $(document).ready(function() {
             dataType: 'json',
             success: function(event) {
                 let result=event.data
-                $('#eventModalLabel').text(result.name);
+                $('#eventModalLabel').html(result.name);
                 let modalBody = `
                     <p><strong>Date:</strong> ${result.event_date}</p>
                     <p><strong>Time:</strong> ${result.event_time}</p>

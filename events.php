@@ -43,7 +43,7 @@ try {
                 <div class="col">
                     <div class="card h-100 shadow-sm">
                         <div class="card-body">
-                            <h5 class="card-title"><?php echo htmlspecialchars($event['name']); ?></h5>
+                            <h5 class="card-title"><?php echo $event['name']; ?></h5>
                             <p class="card-text">
                                 <i class="bi bi-calendar"></i> 
                                 <?php echo date('d M Y', strtotime($event['event_date'])); ?>
@@ -54,7 +54,7 @@ try {
                             </p>
                             <p class="card-text">
                                 <i class="bi bi-geo-alt"></i> 
-                                <?php echo htmlspecialchars($event['location']); ?>
+                                <?php echo $event['location']; ?>
                             </p>
                             <p class="card-text">
                                 <i class="bi bi-people"></i> 
