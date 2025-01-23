@@ -90,12 +90,13 @@ A comprehensive web-based event management system built with PHP that allows org
 ## Available Routes
 
 ### Public Routes
-- `/events.php` - List all available events
+- `/index.php` - List all available events
 - `/register-event.php?id={event_id}` - Event registration form
 - `/register.php` - Create new account
 - `/login.php` - Login page
 
 ### Admin Routes
+- `/dashboard.php` - List all events
 - `/create-event.php` - Create new event
 - `/edit-event.php?id={event_id}` - Edit existing event
 - `/event-users.php` - View all registered users
@@ -119,7 +120,7 @@ For testing purposes, you can use the following login credentials:
 ## Usage
 
 1. Viewing Events:
-   - Access events.php to browse all available events
+   - Access index.php to browse all available events
    - No registration required to view events
    - View detailed event information
 
@@ -155,11 +156,20 @@ For testing purposes, you can use the following login credentials:
 - Tables and relationships
 - Field definitions
 
-### Public Event Pages
+### Event Pages
+
+#### Public Events List
 ![Events List](screenshot/events.png)
 - Public listing of all upcoming events
 - Event details with date, time, and location
 - Registration availability status
+
+#### Admin Dashboard
+![All Events](screenshot/all-events.png)
+- Complete list of all events
+- Event management and editing options
+- Quick access to registration management
+- Export functionality
 
 ### Event Registration
 ![Event Registration Form](screenshot/event-register.png)

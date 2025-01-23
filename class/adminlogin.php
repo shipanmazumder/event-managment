@@ -42,7 +42,7 @@ class adminlogin {
                     session::set("email", $user['email']);
                     session::set("id", $user['id']);
                     session::set("name", $user['name']);
-                    header("Location:index.php");
+                    header("Location:dashboard.php");
                     exit();
                 }
             }

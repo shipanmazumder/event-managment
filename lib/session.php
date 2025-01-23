@@ -30,7 +30,7 @@
 		public static function checklogin(){
 			self::init();
 			if(self::get('adminlogin')==true){
-				header("Location:index.php");
+				header("Location:dashboard.php");
 			}
 		}
 		public static function destory(){

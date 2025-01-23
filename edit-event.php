@@ -5,7 +5,7 @@
 try {
     $eventId=$_GET['id'];
     if(!isset($_GET['id'])|| $_GET['id']==null){
-        header("Location:index.php");
+        header("Location:dashboard.php");
     }
     $event=new event();
 } catch (Exception $e) {
@@ -17,7 +17,7 @@ if($_SERVER['REQUEST_METHOD']=='POST' && isset($_POST['submit'])){
     try {
         $eventUpdate=$event->update($_POST,$eventId);
 
-        header("Location:index.php");
+        header("Location:dashboard.php");
 
         // utils::debug_v($eventUpdate);
 

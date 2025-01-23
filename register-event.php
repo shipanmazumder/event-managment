@@ -15,13 +15,13 @@ try {
     // Get event details from query parameter
     $event_id = isset($_GET['id']) ? $_GET['id'] : null;
     if (!$event_id) {
-        header("Location: index.php");
+        header("Location: dashboard.php");
         exit();
     }
     
     $event = $eventObj->getEventById($event_id);
     if (!$event) {
-        header("Location: index.php");
+        header("Location: dashboard.php");
         exit();
     }
 } catch (Exception $e) {
@@ -70,7 +70,7 @@ try {
                             <button type="submit" class="btn btn-primary w-100">Register for Event</button>
                         </form>
                         <p class="text-center mt-3">
-                            <a href="events.php">Back to Events</a>
+                            <a href="index.php">Back to Events</a>
                         </p>
                     </div>
                 </div>

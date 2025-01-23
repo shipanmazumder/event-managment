@@ -21,7 +21,7 @@
 			$path=$_SERVER['SCRIPT_FILENAME'];
 			$title=basename($path,'.php');
 			$title=str_replace('-',' ', $title);
-			if($title=='index'){
+			if($title=='dashboard'){
 				$title='Dashboard';
 			}
 			if($title=='create-event'){

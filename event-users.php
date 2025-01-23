@@ -6,7 +6,7 @@ include 'class/eventuser.php';
 try {
     $eventId=$_GET['event_id'];
     if(!isset($_GET['event_id'])|| $_GET['event_id']==null){
-        header("Location:index.php");
+        header("Location:dashboard.php");
     }
 } catch (Exception $e) {
     echo "Error: " . $e;
