@@ -59,6 +59,16 @@ A comprehensive web-based event management system built with PHP that allows org
    - Import the database schema
    - Need mysqli enabled
    - Update database credentials in `config/config.php`
+      ```
+      <?php
+         define("DB_HOST","localhost");
+         define("DB_USER","root");
+         define("DB_PASS","your password");
+         define("DB_NAME","events");
+         define("TITLE","Event Management System");
+         define("KEYWORDS","Event Management System");
+      ?>
+      ```
 
    c. Configure domain/subdomain:
    - Point your domain/subdomain to the installation directory
